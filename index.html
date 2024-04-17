@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/reset.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="contenedor-principal">
+        <div class="contenedor-logo">
+            <img class="logo" src="Img/logo.png" alt="logo">
+        </div>
+        <div class="contenedor-texto">
+            <textarea name="" class="campo-texto" id="text-area" cols="30" rows="10" placeholder="ingrese aqui el texto"></textarea>
+            <div class="contenedor-texto-informacion">
+                <img class="exclamacion" src="Img/alerta.png" alt="">
+                <h3>Solo letras minúsculas y sin acentos</h3>
+            </div>
+            <div class="contenedor-texto-botones">
+                <button class="boton active" onclick="encriptarTexto()">¡Encriptar!</button>
+                <button class="boton" onclick="desencriptarTexto()">¡Desincriptar!</button>
+            </div>
+            
+        </div>
+        <div class="contenedor-respuesta">
+            <img class="imagen-buscador" src="Img/buscador.png" alt="busqueda del texto">
+            <h2 class="titulo"><strong>Ningún mensaje fue encontrado</strong></h2>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

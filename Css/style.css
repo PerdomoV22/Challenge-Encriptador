@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: linear-gradient(to right top, #000000, #1d0813, #2b0d24, #35123b, #361b58, #423070, #4e4688, #595ca1, #8482b8, #adaacf, #d6d3e7, #ffffff); */
+    background-color: #C6C6C6;
+    font: italic;
+}
+
+
+
+/*----------------- Section ---------------------*/
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px 0;
+    height: 598px;
+}
+
+/*---------------------------Contenedor Logo-----------------------------*/
+.contenedor-logo {
+    width: 100px; 
+    height: 100%;
+}
+
+.contenedor-logo img {
+    width: 1000px;
+}
+
+/*---------------------------Contenedor Texto-----------------------------*/
+.contenedor-texto {
+    width: 700px; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.contenedor-texto #text-area {
+    width: 100%; 
+    height: 70%;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 20px 0 0 20px;
+}
+
+.contenedor-texto #text-area:focus {
+    outline: none;
+}
+
+.contenedor-texto-informacion {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.contenedor-texto-informacion img {
+    margin-right: 10px;
+}
+
+.contenedor-texto-botones {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 100px; */
+}
+
+.boton {
+    width: 300px;
+    font-size: 1rem;
+    line-height: 100%;
+    background: #5E5E5E;
+    padding: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 20px;
+    border: none;
+}
+
+.contenedor-texto .boton.active {
+    border-radius: 10rem;
+    background: #303030;
+    font-weight: 600;
+}
+
+/*---------------------------Contenedor Respuesta-----------------------------*/
+.contenedor-respuesta {
+    width: 400px; /* Tamaño para el primer div */
+    height: 100%;
+    background-color: #FAF8FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px;
+} 
+
+.contenedor-respuesta .imagen-buscador {
+    width: 50%;
+}
+
+.contenedor-respuesta .titulo {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contenedor-respuesta p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contenedor-respuesta .boton {
+    margin: 400px;
+}
+
+/* <!-- <p id="texto-respuesta">Ingresa el texto que desees encriptar o desencriptar.</p> --> */
