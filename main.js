@@ -13,10 +13,11 @@ function encriptarTexto() {
         replaceAll("a", "ai").
         replaceAll("o", "ober").
         replaceAll("u", "ufat");
+
+        document.getElementById("text-area").value = "";
+        mostrarRespuesta(textoEncriptado);
     }
 
-    document.getElementById("text-area").value = "";
-    mostrarRespuesta(textoEncriptado);
 }
 
 function desencriptarTexto() {
@@ -32,10 +33,11 @@ function desencriptarTexto() {
         replaceAll("ai", "a").
         replaceAll("imes", "i").
         replaceAll("enter", "e");
+
+        document.getElementById("text-area").value = "";
+        mostrarRespuesta(textoDesencriptado);
     }
 
-    document.getElementById("text-area").value = "";
-    mostrarRespuesta(textoDesencriptado);
 }
 
 function mostrarRespuesta(textoEncriptado) {
