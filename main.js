@@ -25,7 +25,7 @@ function desencriptarTexto() {
     let textoDesencriptado = '';
 
     if(!regexInput.test(textoEncriptado) || textoEncriptado.length === 0){
-        alert("No puede dejar el campo vacio, tiene que escribir lo que desea encriptar");
+        alert("No puede dejar el campo vacio, tiene que escribir lo que desea desencriptar");
     }else {
         textoDesencriptado = textoEncriptado.
         replaceAll("ufat", "u").
